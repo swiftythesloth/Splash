@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="?attr/colourBackground"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_game_modes"/>
+
+    <View
+        style="@style/divider_across"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/instructions_large_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/create_start"
+                android:background="@drawable/main_menu_endless"
+                android:text="@string/gametype_endless"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_endless_explanation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/create_start"
+                android:background="@drawable/main_menu_time_attack"
+                android:text="@string/gametype_time_attack"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_time_attack_explanation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/create_start"
+                android:background="@drawable/main_menu_moves"
+                android:text="@string/gametype_moves"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_move_explanation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/create_start"
+                android:background="@drawable/main_menu_create"
+                android:text="@string/gametype_create"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_create_explanation"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

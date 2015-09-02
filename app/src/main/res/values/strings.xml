@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Splash!</string>
+
+    <string name="main_menu_resume">Resume</string>
+    <string name="main_menu_new">New</string>
+    <string name="main_menu_create">Create-a-game</string>
+    <string name="main_menu_endless_flavour_text">Relaxation.</string>
+    <string name="main_menu_time_attack_flavour_text">Pressure.</string>
+    <string name="main_menu_moves_flavour_text">Efficiency.</string>
+    <string name="main_menu_create_flavour_text">Innovation.</string>
+
+    <string name="gametype_time_attack">Time Attack</string>
+    <string name="gametype_endless">Endless</string>
+    <string name="gametype_moves">Moves</string>
+    <string name="gametype_create">Create-a-game</string>
+
+    <string name="settings_on">ON</string>
+    <string name="settings_off">OFF</string>
+
+    <string name="game_default_score_string">Score:\u0020</string>
+    <string name="game_default_moves_string">Moves:\u0020</string>
+    <string name="game_destroyer_explanation">Remove all tiles of your chosen colour. Destruction.</string>
+    <string name="game_stop_time_explanation">Make 5 moves with the countdown stopped. Relief.</string>
+
+    <string name="create_title">Create-a-game</string>
+    <string name="create_grid_size">Grid size:</string>
+    <string name="create_burst_width">Min. burst width:</string>
+    <string name="create_queued_tiles">Tiles in queue:</string>
+    <string name="create_bomb_radius">Bomb radius:</string>
+    <string name="create_wall_density">Wall density:</string>
+    <string name="create_start_endless">Play Endless!</string>
+    <string name="create_start_moves">Play Moves!</string>
+    <string name="create_start_time_attack">Play Time Attack!</string>
+
+    <string name="store_powerups_title">Powerups</string>
+    <string name="store_5_destroyers">5 Destroyers</string>
+    <string name="store_5_time_stops">5 Time Stops</string>
+    <string name="store_5_undos">5 Undos</string>
+    <string name="store_grid_shapes_title">Grid Shapes</string>
+    <string name="store_animations_title">Animations</string>
+    <string name="store_circle">Circle</string>
+    <string name="store_sharp">Sharp</string>
+    <string name="store_normal">Normal</string>
+    <string name="store_colour_themes_title">Colour Themes</string>
+    <string name="store_theme_vanilla">Vanilla</string>
+    <string name="store_theme_autumn">Autumn</string>
+    <string name="store_theme_retro">Retro</string>
+    <string name="store_theme_summer">Summer</string>
+    <string name="store_theme_winter">Winter</string>
+    <string name="store_theme_royal">Royal</string>
+    <string name="store_bounce">Bounce</string>
+    <string name="store_rain">Rain</string>
+    <string name="store_other_title">Other</string>
+    <string name="store_remove_ads">Remove ads</string>
+    <string name="store_restore_purchase">Restore purchase</string>
+    <string name="store_double_coins">Earn double coins</string>
+    <string name="store_coins_plus">+</string>
+
+    <string name="settings_sound">Sound</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_colour_blind">Colour blind</string>
+    <string name="settings_lights">Lights</string>
+
+    <string name="stats_games_completed_label">Games completed</string>
+    <string name="stats_best_score_label">Best score</string>
+    <string name="stats_favourite_game_label">Favourite game</string>
+    <string name="stats_coins_earned">Coins earned</string>
+    <string name="stats_best_burst">Best burst chain</string>
+    <string name="stats_powerups_used">Powerups used</string>
+    <string name="stats_favourite_powerup">Favourite powerup</string>
+    <string name="stats_title">Stats</string>
+    <string name="stats_favourite_game_played_count">Times played</string>
+    <string name="stast_best_burst_count_label">Chain size</string>
+    <string name="stats_coins_spent">Coins spent</string>
+    <string name="stats_player_ranking">Player ranking</string>
+    <string name="stats_previous_3_scores">Previous 3 scores</string>
+    <string name="stats_tiles_burst">Burst</string>
+    <string name="stats_tiles_destroyed">Destroyed</string>
+    <string name="stats_tiles_bombed">Bombed</string>
+
+    <string name="player_ranking_rookie">Rookie</string>
+    <string name="player_ranking_amateur">Amateur</string>
+    <string name="player_ranking_professional">Professional</string>
+    <string name="player_ranking_expert">Expert</string>
+    <string name="player_ranking_legend">Legendary</string>
+    <string name="player_ranking_favourite_endless">procrastinator</string>
+    <string name="player_ranking_favourite_moves">thinker</string>
+    <string name="player_ranking_favourite_time_attack">hothead</string>
+    <string name="player_ranking_favourite_create">innovator</string>
+
+    <string name="instructions_swipe_left">Swipe left for more</string>
+    <string name="instructions_premise">The premise is simple: fill the grid and burst blocks of 5 or more touching tiles of the same colour.</string>
+    <string name="instructions_hello">Hello and welcome to Splash!</string>
+    <string name="instructions_endless_explanation">Leisurely game in which there are no restrictions, play for as long as you like.</string>
+    <string name="instructions_time_attack_explanation">If you dont make a move before the time runs out, a random move will be made.</string>
+    <string name="instructions_move_explanation">See how many points you can get before you run out of moves.</string>
+    <string name="instructions_create_explanation">Create your own game: change the grid size, number of tiles needed to burst and more!</string>
+    <string name="instructions_game_modes">There are four game modes in Splash!</string>
+    <string name="instructions_powerups_intro">You can buy powerups from the store with your in-game coins to help you out in a tight spot.</string>
+    <string name="instructions_undo_explanation">Undo your previous move if you\'ve made an error.</string>
+    <string name="instructions_destroyer_explanation">Remove all tiles of your chosen colour.</string>
+    <string name="instructions_stop_time_explanation">Pause the countdown for 5 moves.</string>
+    <string name="instructions_store">The store can be accessed from the main menu at any time.</string>
+    <string name="instructions_game_over">The game is over when you can\'t make another move.</string>
+    <string name="instructions_queue">The next tile to be placed is shown at the furthest left position in the queue above the grid.</string>
+    <string name="instructions_outro">That\'s everything you need to know to get started!</string>
+    <string name="instructions_go_back">Touch the arrow in the top-left to go back to the menu.</string>
+    <string name="instructions_good_luck">Good luck and have fun!</string>
+
+    <string name="rating_if_enjoying">If you are enjoying the game, please take the time to leave a rating on the Play Store.</string>
+    <string name="rating_it_really_helps">It really helps to allow more people to play it and enjoy it as you are!</string>
+    <string name="rating_leave_rating">Leave Rating</string>
+    <string name="rating_thank_you">Thank you!</string>
+    <string name="rating_never_ask">Never ask again</string>
+
+    <string name="purchase_10000">Handful of coins (10,000)</string>
+    <string name="purchase_50000">Bag of coins (50,000)</string>
+    <string name="purchase_100000">Sack of coins (100,000)</string>
+    <string name="purchase_200000">Treasure chest of coins (200,000)</string>
+    <string name="purchase_500000">Truck full of coins (500,000)</string>
+    <string name="purchase_get_coins">You can play more Splash! to earn coins or buy them here.</string>
+    <string name="purchase_coins_title">Purchase coins</string>
+
+    <string name="ad_bottom_banner_game">ca-app-pub-9773412278536270/9416952541</string>
+
+    <string name="dialog_purchase_ok">OK</string>
+    <string name="dialog_purchase_successful_title">Purchase successful!</string>
+    <string name="dialog_purchase_unsuccessful_title">Purchase unsuccessful!</string>
+    <string name="dialog_purchase_unsuccessful_reason">You don\'t have enough coins, but you can always win more by playing the game!</string>
+    <string name="game_over_score">Score</string>
+    <string name="game_over_coins_earned">Coins earned</string>
+    <string name="game_over_store">Visit Store</string>
+    <string name="game_over_play_again">Play again</string>
+    <string name="game_over_coins_in_bank">Coins in bank</string>
+    <string name="purchase_2500000">Mother lode of coins (2,500,000)</string>
+
+</resources>

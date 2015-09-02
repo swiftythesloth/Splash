@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/stats_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/colourBackground"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/stats_back"
+            style="@style/game_options"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/stats_divider_1"
+        style="@style/divider_across"
+        android:layout_margin="0dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/stats_player_ranking_label"
+                style="@style/stats_label"
+                android:text="@string/stats_player_ranking"/>
+
+            <TextView
+                android:id="@+id/stats_player_ranking"
+                style="@style/stats_text"
+                android:textSize="@dimen/stats_player_ranking_textsize"/>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_games_completed_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_games_completed_label"/>
+
+                    <TextView
+                        android:id="@+id/stats_games_completed"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/stats_divider_2"
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_best_score_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_best_score_label"/>
+
+                    <TextView
+                        android:id="@+id/stats_best_score"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stats_label"
+                    android:text="@string/stats_previous_3_scores"/>
+
+                <TextView
+                    android:id="@+id/stats_previous_best_1"
+                    style="@style/stats_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/stats_previous_best_2"
+                    style="@style/stats_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/stats_previous_best_3"
+                    style="@style/stats_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_coins_earned_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_coins_earned"/>
+
+                    <TextView
+                        android:id="@+id/stats_coins_earned"
+                        android:gravity="center"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/stats_divider_4"
+                    style="@style/divider_up"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_coins_spent_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_coins_spent"/>
+
+                    <TextView
+                        android:id="@+id/stats_coins_spent"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/stats_container_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/stats_label"
+                        android:text="@string/stats_tiles_burst"/>
+
+                    <TextView
+                        android:id="@+id/stats_tiles_burst"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/stats_container_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/stats_label"
+                        android:text="@string/stats_tiles_bombed"/>
+
+                    <TextView
+                        android:id="@+id/stats_tiles_bombed"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/stats_container_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/stats_label"
+                        android:text="@string/stats_tiles_destroyed"/>
+
+                    <TextView
+                        android:id="@+id/stats_tiles_destroyed"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_favourite_powerup_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_favourite_powerup"/>
+
+                    <ImageView
+                        android:id="@+id/stats_favourite_powerup"
+                        android:layout_width="@dimen/game_powerup_icon_dimensions"
+                        android:layout_height="@dimen/game_powerup_icon_dimensions"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/stats_divider_10"
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_powerups_used_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_powerups_used"/>
+
+                    <TextView
+                        android:id="@+id/stats_powerups_used"
+                        style="@style/stats_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="top|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="@dimen/stats_container_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_favourite_game_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_favourite_game_label"/>
+
+                    <TextView
+                        android:id="@+id/stats_favourite_game"
+                        style="@style/main_menu_gametype"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/stats_divider_6"
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_margin="@dimen/stats_container_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_times_played_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_favourite_game_played_count"/>
+
+                    <TextView
+                        android:id="@+id/stats_favourite_game_played_count"
+                        style="@style/stats_text"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_across"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/stats_container_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_best_burst_label"
+                        style="@style/stats_label"
+                        android:text="@string/stats_best_burst"/>
+
+                    <GridLayout
+                        android:id="@+id/stats_best_burst"
+                        android:layout_margin="@dimen/stats_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/stats_divider_8"
+                    style="@style/divider_up"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stats_best_burst_count_label"
+                        style="@style/stats_label"
+                        android:text="@string/stast_best_burst_count_label"/>
+
+                    <TextView
+                        android:id="@+id/stats_best_burst_count"
+                        style="@style/stats_text"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

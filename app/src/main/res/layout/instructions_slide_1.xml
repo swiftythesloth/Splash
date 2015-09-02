@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="?attr/colourBackground"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_hello"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_premise"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_game_over"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_queue"/>
+
+    <View
+        style="@style/divider_across"/>
+
+    <ImageView
+        android:layout_margin="@dimen/instructions_margin"
+        android:layout_width="@dimen/instructions_full_grid_size"
+        android:layout_height="@dimen/instructions_full_grid_size"
+        android:src="@drawable/instructions_full_grid"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_swipe_left"/>
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/create_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/colourBackground"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/create_back"
+            style="@style/game_options"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="right|center">
+
+            <SeekBar
+                android:id="@+id/create_grid_dimensions"
+                style="@style/create_seekbar"
+                android:progress="5"
+                android:max="8"/>
+
+            <SeekBar
+                android:id="@+id/create_burst_width"
+                style="@style/create_seekbar"
+                android:progress="1"
+                android:max="6"/>
+
+            <SeekBar
+                android:id="@+id/create_queued_tiles"
+                style="@style/create_seekbar"
+                android:progress="4"
+                android:max="8"/>
+
+            <SeekBar
+                android:id="@+id/create_bomb_radius"
+                style="@style/create_seekbar"
+                android:progress="1"
+                android:max="3"/>
+
+            <SeekBar
+                android:id="@+id/create_wall_density"
+                style="@style/create_seekbar"
+                android:progress="20"
+                android:max="50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="left|center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/create_view_height"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/create_layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_grid_size"
+                    android:background="?attr/colourBackground"
+                    android:textColor="?attr/colourText"/>
+
+                <TextView
+                    android:id="@+id/create_grid_dimensions_label"
+                    style="@style/create_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/create_view_height"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/create_layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_burst_width"
+                    android:background="?attr/colourBackground"
+                    android:textColor="?attr/colourText"/>
+
+                <TextView
+                    android:id="@+id/create_burst_width_label"
+                    style="@style/create_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/create_view_height"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/create_layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_queued_tiles"
+                    android:background="?attr/colourBackground"
+                    android:textColor="?attr/colourText"/>
+
+                <TextView
+                    android:id="@+id/create_queued_tiles_label"
+                    style="@style/create_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/create_view_height"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/create_layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_bomb_radius"
+                    android:background="?attr/colourBackground"
+                    android:textColor="?attr/colourText"/>
+
+                <TextView
+                    android:id="@+id/create_bomb_radius_label"
+                    style="@style/create_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_view_height"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/create_layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_wall_density"
+                    android:background="?attr/colourBackground"
+                    android:textColor="?attr/colourText"/>
+
+                <TextView
+                    android:id="@+id/create_wall_density_label"
+                    style="@style/create_value"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/create_layout_margin"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/create_start_endless"
+            style="@style/create_start"
+            android:background="@drawable/main_menu_endless"
+            android:text="@string/gametype_endless"/>
+
+        <TextView
+            android:id="@+id/create_start_moves"
+            style="@style/create_start"
+            android:background="@drawable/main_menu_moves"
+            android:text="@string/gametype_moves"/>
+
+        <TextView
+            android:id="@+id/create_start_time_attack"
+            style="@style/create_start"
+            android:background="@drawable/main_menu_time_attack"
+            android:text="@string/gametype_time_attack"/>
+
+    </LinearLayout>
+
+</LinearLayout>

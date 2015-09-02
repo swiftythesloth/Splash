@@ -1,0 +1,100 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="settings_switch_textsize">32sp</dimen>
+    <dimen name="settings_switch_margin">10dp</dimen>
+    <dimen name="settings_label_textsize">12sp</dimen>
+    <dimen name="settings_label_margin">5dp</dimen>
+
+    <dimen name="main_menu_container_margin">10dp</dimen>
+    <dimen name="main_menu_container_padding">10dp</dimen>
+    <dimen name="main_menu_gametype_length">90dp</dimen>
+    <dimen name="main_menu_gametype_margin">5dp</dimen>
+    <dimen name="main_menu_gametype_textsize">12sp</dimen>
+    <dimen name="main_menu_resume_new_width">40dp</dimen>
+    <dimen name="main_menu_resume_new_padding">5dp</dimen>
+    <dimen name="main_menu_resume_new_textsize">8sp</dimen>
+    <dimen name="main_menu_resume_new_margin">5dp</dimen>
+    <dimen name="main_menu_flavour_text_textsize">8sp</dimen>
+    <dimen name="main_menu_flavour_text_margin">2dp</dimen>
+    <dimen name="main_menu_icon_margin">10dp</dimen>
+    <dimen name="main_menu_icon_size">40dp</dimen>
+
+    <dimen name="game_grid_size">310dp</dimen>
+    <dimen name="game_grid_margin">15dp</dimen>
+    <dimen name="game_queue_grid_width">270dp</dimen>
+    <dimen name="game_queue_grid_tile">30dp</dimen>
+    <dimen name="game_queue_grid_margin">15dp</dimen>
+    <dimen name="game_stats_margin">20dp</dimen>
+    <dimen name="game_stats_textsize">16sp</dimen>
+    <dimen name="game_menu_icon_dimensions">20dp</dimen>
+    <dimen name="game_menu_icon_margin">25dp</dimen>
+    <dimen name="game_powerup_icon_dimensions">35dp</dimen>
+    <dimen name="game_powerup_icon_margin_left">20dp</dimen>
+    <dimen name="game_powerups_count_height">22dp</dimen>
+    <dimen name="game_powerups_count_textsize">8sp</dimen>
+    <dimen name="game_square_sharp_stroke">4dp</dimen>
+    <dimen name="game_square_circle_stroke">7dp</dimen>
+    <dimen name="game_powerup_explanation_textsize">12sp</dimen>
+
+    <dimen name="store_back_dimensions">30dp</dimen>
+    <dimen name="store_purchase_total_coin_width">75dp</dimen>
+    <dimen name="store_purchase_total_coin_margin">15dp</dimen>
+    <dimen name="store_purchase_total_coin_padding">10dp</dimen>
+    <dimen name="store_purchase_powerup_margin">10dp</dimen>
+    <dimen name="store_purchase_powerup_padding_top_bottom">5dp</dimen>
+    <dimen name="store_purchase_powerup_padding_left_right">10dp</dimen>
+    <dimen name="store_number_powerups_margin">5dp</dimen>
+    <dimen name="store_purchase_powerup_label_textsize">10sp</dimen>
+    <dimen name="store_purchase_grid_shape_label_textsize">14sp</dimen>
+    <dimen name="store_group_title_textsize">16sp</dimen>
+    <dimen name="store_group_title_margin">10dp</dimen>
+    <dimen name="store_purchase_grid_shape_dimensions">40dp</dimen>
+    <dimen name="store_purchase_theme_dimensions">60dp</dimen>
+    <dimen name="store_container_margin">10dp</dimen>
+    <dimen name="store_coins_plus_padding">6dp</dimen>
+    <dimen name="store_coins_plus_margin">10dp</dimen>
+    <dimen name="store_coins_plus_size">20dp</dimen>
+
+    <dimen name="create_seekbar_width">150dp</dimen>
+    <dimen name="create_seekbar_label_width">50dp</dimen>
+    <dimen name="create_seekbar_padding">10dp</dimen>
+    <dimen name="create_layout_margin">10dp</dimen>
+    <dimen name="create_play_game_textsize">10sp</dimen>
+    <dimen name="create_play_game_padding">5dp</dimen>
+    <dimen name="create_play_game_margin">5dp</dimen>
+    <dimen name="create_gametype_length">70dp</dimen>
+    <dimen name="create_label_textsize">18sp</dimen>
+    <dimen name="create_label_margin">10dp</dimen>
+    <dimen name="create_view_height">40dp</dimen>
+
+    <dimen name="stats_player_ranking_textsize">32sp</dimen>
+    <dimen name="stats_best_burst_grid_size">100dp</dimen>
+    <dimen name="stats_container_margin">20dp</dimen>
+    <dimen name="stats_margin">5dp</dimen>
+    <dimen name="stats_value_textsize">24sp</dimen>
+    <dimen name="stats_label_textsize">10sp</dimen>
+
+    <dimen name="instructions_margin">10dp</dimen>
+    <dimen name="instructions_textsize">14sp</dimen>
+    <dimen name="instructions_text_width">200dp</dimen>
+    <dimen name="instructions_full_grid_size">150dp</dimen>
+    <dimen name="instructions_swifty_size">75dp</dimen>
+    <dimen name="instructions_large_margin">30dp</dimen>
+
+    <dimen name="dialog_title_textsize">18sp</dimen>
+    <dimen name="dialog_title_margin">10dp</dimen>
+    <dimen name="dialog_text_textsize">14sp</dimen>
+    <dimen name="dialog_text_margin">5dp</dimen>
+    <dimen name="dialog_text_padding">5dp</dimen>
+
+    <dimen name="divider_across_margin_left_right">15dp</dimen>
+    <dimen name="divider_across_margin_top_bottom">10dp</dimen>
+
+    <dimen name="game_over_value_textsize">28sp</dimen>
+    <dimen name="game_over_grid_size">150dp</dimen>
+    <dimen name="game_over_score_margin">30dp</dimen>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="?attr/colourBackground"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_powerups_intro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/game_powerups"
+            android:background="@drawable/ic_store"/>
+
+        <TextView
+            style="@style/instructions_text"
+            android:text="@string/instructions_store"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_across"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/instructions_large_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/instructions_large_margin">
+
+            <TextView
+                style="@style/game_powerups"
+                android:background="@drawable/ic_undo"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_undo_explanation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/instructions_large_margin">
+
+            <TextView
+                style="@style/game_powerups"
+                android:background="@drawable/ic_destroyer"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_destroyer_explanation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/instructions_large_margin">
+
+            <TextView
+                style="@style/game_powerups"
+                android:background="@drawable/ic_stop_time"/>
+
+            <TextView
+                style="@style/instructions_text"
+                android:text="@string/instructions_stop_time_explanation"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

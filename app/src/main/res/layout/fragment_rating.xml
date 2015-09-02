@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/colourBackground">
+
+    <LinearLayout
+        android:id="@+id/rating_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/dialog_text_label"
+            android:text="@string/rating_if_enjoying"/>
+
+        <TextView
+            style="@style/dialog_text_label"
+            android:text="@string/rating_it_really_helps"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rating_never"
+                style="@style/dialog_text"
+                android:background="@drawable/store_coin_total"
+                android:text="@string/rating_never_ask"
+                android:layout_margin="@dimen/dialog_text_margin"/>
+
+            <TextView
+                android:id="@+id/rating_go_play_store"
+                style="@style/dialog_text"
+                android:background="@drawable/store_coin_total"
+                android:text="@string/rating_leave_rating"
+                android:layout_margin="@dimen/dialog_text_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/dialog_text_label"
+            android:text="@string/rating_thank_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,186 @@
+<LinearLayout
+    android:id="@+id/game_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colourBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GameActivity"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/game_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/game_options"
+            android:onClick="goBack"
+            android:src="@drawable/ic_back"/>
+
+        <ImageView
+            android:id="@+id/game_new"
+            style="@style/game_options"
+            android:onClick="newGame"
+            android:src="@drawable/ic_new_game"/>
+
+        <ImageView
+            android:id="@+id/game_options_sound"
+            style="@style/game_options"
+            android:onClick="toggleSound"
+            android:src="@drawable/ic_sound_on"/>
+
+        <ImageView
+            android:id="@+id/game_options_vibration"
+            style="@style/game_options"
+            android:onClick="toggleVibration"
+            android:src="@drawable/ic_vibration_on"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/game_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/game_score"
+                style="@style/game_stats"/>
+
+            <TextView
+                android:id="@+id/game_moves_left"
+                style="@style/game_stats"/>
+
+            <TextView
+                android:id="@+id/game_time"
+                style="@style/game_stats"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/game_queued_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/game_queue_grid_margin"
+            android:layout_gravity="right"/>
+
+        <GridLayout
+            android:id="@+id/game_active_grid"
+            android:layout_width="@dimen/game_grid_size"
+            android:layout_height="@dimen/game_grid_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/game_powerup_explanation"
+            style="@style/game_powerups_explanation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_powerups_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/game_undo_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/game_options_undo"
+                style="@style/game_powerups"
+                android:onClick="undoMove"
+                android:src="@drawable/ic_undo"/>
+
+            <TextView
+                android:id="@+id/game_undo_count"
+                style="@style/game_powerups_count"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_destroyer_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="toggleDestroyer">
+
+            <ImageView
+                android:id="@+id/game_options_destroyer"
+                style="@style/game_powerups"
+                android:onClick="toggleDestroyer"
+                android:src="@drawable/ic_destroyer"/>
+
+            <TextView
+                android:id="@+id/game_destroyer_count"
+                style="@style/game_powerups_count"
+                android:onClick="toggleDestroyer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_stop_time_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="stopTime">
+
+            <ImageView
+                android:id="@+id/game_options_stop_time"
+                style="@style/game_powerups"
+                android:onClick="stopTime"
+                android:src="@drawable/ic_stop_time"/>
+
+            <TextView
+                android:id="@+id/game_stop_time_count"
+                style="@style/game_powerups_count"
+                android:onClick="stopTime"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_bottom_game"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_bottom_banner_game">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

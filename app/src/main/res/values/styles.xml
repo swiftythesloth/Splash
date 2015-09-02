@@ -1,0 +1,260 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colourBackground">@color/md_grey_300</item>
+        <item name="colourText">@color/md_grey_800</item>
+        <item name="wall">@drawable/game_square_wall_light</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colourBackground">@color/md_black_1000</item>
+        <item name="colourText">@color/md_white_1000</item>
+        <item name="wall">@drawable/game_square_wall_dark</item>
+    </style>
+
+    <style name="main_menu_gametype">
+        <item name="android:layout_width">@dimen/main_menu_gametype_length</item>
+        <item name="android:layout_height">@dimen/main_menu_gametype_length</item>
+        <item name="android:layout_margin">@dimen/main_menu_gametype_margin</item>
+        <item name="android:textSize">@dimen/main_menu_gametype_textsize</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="main_menu_resume_new">
+        <item name="android:layout_width">@dimen/main_menu_resume_new_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/main_menu_resume_new_margin</item>
+        <item name="android:padding">@dimen/main_menu_resume_new_padding</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">@dimen/main_menu_resume_new_textsize</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="main_menu_resume" parent="main_menu_resume_new">
+        <item name="android:background">@drawable/main_menu_resume</item>
+        <item name="android:text">@string/main_menu_resume</item>
+    </style>
+
+    <style name="main_menu_new" parent="main_menu_resume_new">
+        <item name="android:background">@drawable/main_menu_new</item>
+        <item name="android:text">@string/main_menu_new</item>
+    </style>
+
+    <style name="main_menu_flavour_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/main_menu_flavour_text_textsize</item>
+        <item name="android:layout_margin">@dimen/main_menu_flavour_text_margin</item>
+        <item name="android:textColor">?attr/colourText</item>
+    </style>
+
+    <style name="game_options">
+        <item name="android:layout_width">@dimen/game_menu_icon_dimensions</item>
+        <item name="android:layout_height">@dimen/game_menu_icon_dimensions</item>
+        <item name="android:layout_margin">@dimen/game_menu_icon_margin</item>
+    </style>
+
+    <style name="game_powerups">
+        <item name="android:layout_width">@dimen/game_powerup_icon_dimensions</item>
+        <item name="android:layout_height">@dimen/game_powerup_icon_dimensions</item>
+        <item name="android:layout_marginLeft">@dimen/game_powerup_icon_margin_left</item>
+    </style>
+
+    <style name="game_powerups_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:textSize">@dimen/game_powerups_count_textsize</item>
+        <item name="android:layout_gravity">top|center</item>
+    </style>
+
+    <style name="game_stats">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/game_stats_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/game_stats_margin</item>
+        <item name="android:layout_marginRight">@dimen/game_stats_margin</item>
+    </style>
+
+    <style name="game_powerups_explanation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/game_powerup_explanation_textsize</item>
+        <item name="android:textColor">?attr/colourText</item>
+    </style>
+
+    <style name="store_total_coins">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/store_purchase_total_coin_margin</item>
+        <item name="android:layout_marginBottom">@dimen/store_purchase_total_coin_margin</item>
+        <item name="android:layout_marginLeft">@dimen/store_purchase_total_coin_margin</item>
+        <item name="android:padding">@dimen/store_purchase_total_coin_padding</item>
+        <item name="android:background">@drawable/store_coin_total</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="store_group_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/store_group_title_margin</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:textSize">@dimen/store_group_title_textsize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="options_switch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/settings_switch_margin</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/settings_switch_textsize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="options_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/settings_label_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/md_grey_500</item>
+        <item name="android:textSize">@dimen/settings_label_textsize</item>
+    </style>
+
+    <style name="stats_text" parent="options_switch">
+        <item name="android:textSize">@dimen/stats_value_textsize</item>
+        <item name="android:layout_margin">@dimen/stats_margin</item>
+    </style>
+
+    <style name="stats_label" parent="options_label">
+        <item name="android:textSize">@dimen/stats_label_textsize</item>
+        <item name="android:layout_margin">@dimen/stats_margin</item>
+    </style>
+
+    <style name="stats_divider" parent="divider_across">
+        <item name="android:layout_marginTop">@dimen/stats_margin</item>
+        <item name="android:layout_marginBottom">@dimen/stats_margin</item>
+    </style>
+
+    <style name="instructions_text" parent="options_switch">
+        <item name="android:textSize">@dimen/instructions_textsize</item>
+        <item name="android:layout_margin">@dimen/instructions_margin</item>
+    </style>
+
+    <style name="store_number_powerups">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:layout_margin">@dimen/store_number_powerups_margin</item>
+    </style>
+
+    <style name="store_purchase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/store_purchase_powerup_margin</item>
+        <item name="android:paddingTop">@dimen/store_purchase_powerup_padding_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/store_purchase_powerup_padding_top_bottom</item>
+        <item name="android:paddingLeft">@dimen/store_purchase_powerup_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/store_purchase_powerup_padding_left_right</item>
+        <item name="android:background">@drawable/store_purchase</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="store_purchase_powerup_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:textSize">@dimen/store_purchase_powerup_label_textsize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="create_seekbar">
+        <item name="android:layout_width">@dimen/create_seekbar_width</item>
+        <item name="android:layout_height">@dimen/create_view_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/create_seekbar_padding</item>
+        <item name="android:layout_margin">@dimen/create_layout_margin</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+
+    <style name="create_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/create_view_height</item>
+        <item name="android:textColor">@color/md_green_800</item>
+        <item name="android:textSize">@dimen/create_label_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/create_label_margin</item>
+    </style>
+
+    <style name="create_start">
+        <item name="android:layout_width">@dimen/create_gametype_length</item>
+        <item name="android:layout_height">@dimen/create_gametype_length</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_margin">@dimen/create_play_game_margin</item>
+        <item name="android:padding">@dimen/create_play_game_padding</item>
+    </style>
+
+    <style name="dialog_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/dialog_title_margin</item>
+        <item name="android:textColor">?attr/colourText</item>
+        <item name="android:textSize">@dimen/dialog_title_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dialog_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dialog_text_margin</item>
+        <item name="android:padding">@dimen/dialog_text_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">@dimen/dialog_text_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dialog_text_label" parent="dialog_text">
+        <item name="android:textColor">?attr/colourText</item>
+    </style>
+
+    <style name="dialog_animations">
+        <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/abc_shrink_fade_out_from_bottom</item>
+    </style>
+
+    <style name="divider_across">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/divider_across_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/divider_across_margin_left_right</item>
+        <item name="android:layout_marginBottom">@dimen/divider_across_margin_top_bottom</item>
+        <item name="android:layout_marginTop">@dimen/divider_across_margin_top_bottom</item>
+        <item name="android:background">@color/md_grey_800</item>
+    </style>
+
+    <style name="divider_up">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/divider_across_margin_top_bottom</item>
+        <item name="android:layout_marginRight">@dimen/divider_across_margin_top_bottom</item>
+        <item name="android:layout_marginTop">@dimen/divider_across_margin_left_right</item>
+        <item name="android:layout_marginBottom">@dimen/divider_across_margin_left_right</item>
+        <item name="android:background">@color/md_grey_800</item>
+    </style>
+</resources>

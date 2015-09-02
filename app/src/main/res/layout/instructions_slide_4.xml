@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="?attr/colourBackground"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_outro"
+        android:layout_margin="@dimen/instructions_large_margin"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_go_back"
+        android:layout_margin="@dimen/instructions_large_margin"/>
+
+    <TextView
+        style="@style/instructions_text"
+        android:text="@string/instructions_good_luck"
+        android:layout_margin="@dimen/instructions_large_margin"/>
+
+    <ImageView
+        android:layout_width="@dimen/instructions_swifty_size"
+        android:layout_height="@dimen/instructions_swifty_size"
+        android:src="@drawable/ic_swifty"/>
+
+</LinearLayout>

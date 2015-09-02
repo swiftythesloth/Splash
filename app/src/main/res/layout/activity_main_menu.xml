@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_menu_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colourBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/main_menu_icon_size"
+            android:layout_height="@dimen/main_menu_icon_size"
+            android:layout_marginRight="@dimen/main_menu_icon_margin"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_menu_icon_size"
+            android:textColor="?attr/colourText"
+            android:gravity="center"
+            android:textSize="@dimen/settings_switch_textsize"
+            android:textStyle="italic"
+            android:text="@string/app_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/main_menu_gametype_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <LinearLayout
+                android:id="@+id/main_menu_endless_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_menu_container_margin"
+                android:padding="@dimen/main_menu_container_padding"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/main_menu_gametype"
+                    android:background="@drawable/main_menu_endless"
+                    android:text="@string/gametype_endless"/>
+
+                <TextView
+                    style="@style/main_menu_flavour_text"
+                    android:text="@string/main_menu_endless_flavour_text"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_menu_resume_endless"
+                        style="@style/main_menu_resume"/>
+
+                    <TextView
+                        android:id="@+id/main_menu_new_endless"
+                        style="@style/main_menu_new"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_menu_time_attack_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_menu_container_margin"
+                android:padding="@dimen/main_menu_container_padding"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/main_menu_gametype"
+                    android:background="@drawable/main_menu_time_attack"
+                    android:text="@string/gametype_time_attack"/>
+
+                <TextView
+                    style="@style/main_menu_flavour_text"
+                    android:text="@string/main_menu_time_attack_flavour_text"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_menu_resume_time_attack"
+                        style="@style/main_menu_resume"/>
+
+                    <TextView
+                        android:id="@+id/main_menu_new_time_attack"
+                        style="@style/main_menu_new"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_menu_moves_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_menu_container_margin"
+                android:padding="@dimen/main_menu_container_padding"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/main_menu_gametype"
+                    android:background="@drawable/main_menu_moves"
+                    android:text="@string/gametype_moves"/>
+
+                <TextView
+                    style="@style/main_menu_flavour_text"
+                    android:text="@string/main_menu_moves_flavour_text"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_menu_resume_moves"
+                        style="@style/main_menu_resume"/>
+
+                    <TextView
+                        android:id="@+id/main_menu_new_moves"
+                        style="@style/main_menu_new"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_menu_create_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_menu_container_margin"
+                android:padding="@dimen/main_menu_container_padding"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/main_menu_gametype"
+                    android:background="@drawable/main_menu_create"
+                    android:text="@string/gametype_create"/>
+
+                <TextView
+                    style="@style/main_menu_flavour_text"
+                    android:text="@string/main_menu_create_flavour_text"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_menu_resume_create"
+                        style="@style/main_menu_resume"/>
+
+                    <TextView
+                        android:id="@+id/main_menu_new_create"
+                        style="@style/main_menu_new"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_menu_divider"
+        style="@style/divider_across"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="top|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_menu_store"
+            style="@style/game_powerups"
+            android:src="@drawable/ic_store"/>
+
+        <ImageView
+            android:id="@+id/main_menu_stats"
+            style="@style/game_powerups"
+            android:src="@drawable/ic_stats"/>
+
+        <ImageView
+            android:id="@+id/main_menu_instructions"
+            style="@style/game_powerups"
+            android:src="@drawable/ic_instructions"/>
+
+        <ImageView
+            android:id="@+id/main_menu_settings"
+            style="@style/game_powerups"
+            android:src="@drawable/ic_settings"/>
+
+    </LinearLayout>
+
+</LinearLayout>
